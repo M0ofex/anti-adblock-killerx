@@ -42,11 +42,12 @@
 
 
     const DB = {
-
-        selectors: ['.adblock', '.paywall', '#paywall', '.modal-open', '.sp-messaging-glass', '.fc-ab-root', '.ad-modal', '.tp-modal'],
-
+        selectors: [
+            '.adblock', '.paywall', '#paywall', '.modal-open', 
+            '.sp-messaging-glass', '.fc-ab-root', '.ad-modal', '.tp-modal',
+            '.ab-root', '.adblock-overlay', '.adblock-wall', '.anti-adblock' // Added from Filter List
+        ],
         keys: ['adblock', 'whitelist', 'supporting ads', 'subscribe to read', 'disable your ad']
-
     };
 
 
