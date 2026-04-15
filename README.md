@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/M0ofex/anti-adblock-killerx/releases)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/yourusername/anti-adblock-killer.svg?branch=master)](https://travis-ci.org/yourusername/anti-adblock-killer)
+[![Build Status](https://travis-ci.org/M0ofex/anti-adblock-killerx.svg?branch=master)](https://travis-ci.org/yourusername/anti-adblock-killer)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A powerful browser extension that bypasses anti-adblock systems, allowing you to browse the web without interruptions.
