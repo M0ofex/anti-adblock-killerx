@@ -1,22 +1,23 @@
 // ==UserScript==
 // @name         Anti-Adblock & Paywall Elite X
 // @version      4.2.0
-// @namespace    https://github.com/[YOUR_USER]/[YOUR_REPO]
-// @description  Adblock detectors and soft paywalls.
-// @author       Mofex_
+// @namespace    https://github.com/M0ofex/anti-adblock-killerx
+// @description  Military-grade bypass for Adblock detectors and soft paywalls.
+// @author       Coding Partner & Mofex_
 // @match        *://*/*
 // @grant        GM_addStyle
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/[YOUR_USER]/[YOUR_REPO]/main/script.user.js
-// @downloadURL  https://raw.githubusercontent.com/[YOUR_USER]/[YOUR_REPO]/main/script.user.js
+// @updateURL    https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakXScript.user.js
+// @downloadURL  https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakXScript.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
     // 1. CLOAKING & BAIT
+    // Change Referrer to trick sites into thinking the visit is coming from Twitter (to bypass blocks)
     Object.defineProperty(document, 'referrer', { get: () => "https://t.co/" });
     Object.assign(window, { canRunAds: true, isAdblockerActive: false, adsAllowed: true });
 
@@ -26,14 +27,14 @@
     };
 
     const tech = {
-        // Restore Scrolling and Remove Blurs
+        // UI Fixes: Remove Blur filters and re-enable scrolling
         fixUI: () => {
             const s = 'overflow:auto!important;position:static!important;filter:none!important;';
             [document.documentElement, document.body].forEach(el => el && (el.style.cssText += s));
             document.body?.classList.remove('no-scroll', 'paywall-active', 'modal-open', 'p-blocked');
         },
 
-        // Heuristic detection: High Z-index + Fixed + Keywords
+        // Smart Detection: Is the element a blocking popup?
         isEvil: (el) => {
             if (!el || el.nodeType !== 1) return false;
             const style = window.getComputedStyle(el);
@@ -41,7 +42,7 @@
             return (parseInt(style.zIndex) > 999 && style.position === 'fixed' && DB.keys.some(k => text.includes(k)));
         },
 
-        // Immediate removal with an aria-hidden tag for stealth
+        // Final removal of the element
         nuke: (el) => {
             if (!el) return;
             el.style.display = 'none';
@@ -64,7 +65,7 @@
         }));
     });
 
-    // 3. STARTUP
+    // 3. EXECUTION / STARTUP
     const init = () => {
         tech.fixUI();
         scan(document.body);
@@ -76,7 +77,7 @@
         });
     };
 
-    // Global CSS Injection: Visual nuke before script even fires
+    // Immediate CSS Injection to hide elements before JavaScript fully loads
     GM_addStyle(`
         ${DB.selectors.join(',')} { display:none!important; visibility:hidden!important; opacity:0!important; pointer-events:none!important; }
         [class*="blur"], [style*="filter: blur"] { filter: none !important; }
