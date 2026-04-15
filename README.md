@@ -1,77 +1,61 @@
-# Anti-Adblock KillerX - Advanced Adblock Detection Bypass
+# 🛡️ Anti-Adblock Elite X
+**Advanced heuristic protection against adblock detection and soft paywalls.**
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/M0ofex/anti-adblock-killerx/releases)
+[![Version](https://img.shields.io/badge/Version-4.3.0-blue.svg)](https://github.com/M0ofex/anti-adblock-killerx)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/M0ofex/Anti-Adblock-KillerX.svg?branch=master)](https://travis-ci.org/yourusername/anti-adblock-killer)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/M0ofex/anti-adblock-killerx/pulls)
 
-A powerful browser extension that bypasses anti-adblock systems, allowing you to browse the web without interruptions.
-
-## ✨ Key Features
-
-- **Universal bypass** for most anti-adblock scripts
-- **Smart detection** of new anti-adblock techniques
-- **Lightweight** design with minimal performance impact
-- **Auto-updating** rules from the cloud
-- **Compatible** with all major adblockers (uBlock Origin, AdBlock Plus, etc.)
-
-## 📥 Installation
-
-### For Chrome/Chromium:
-1. Download the latest release from our [releases page](https://github.com/yourusername/anti-adblock-killer/releases)
-2. Unzip the downloaded file
-3. Navigate to `chrome://extensions/`
-4. Enable "Developer mode" (toggle in top-right corner)
-5. Click "Load unpacked" and select the unzipped folder
-
-### For Firefox:
-1. Visit our [AMO page](https://addons.mozilla.org/addon/anti-adblock-killer)
-2. Click "Add to Firefox."
-3. Confirm the installation
-
-## 🛠️ Usage
-
-The extension works automatically after installation. For advanced control:
-
-1. Click the extension icon in your toolbar
-2. Access the dashboard to:
-   - Enable/disable specific protections
-   - Whitist certain websites
-   - View active bypasses
-3. Customize settings via the options page
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-- Report bugs via [GitHub Issues](https://github.com/yourusername/anti-adblock-killer/issues)
-- Suggest improvements or new features
-- Submit pull requests (see our [Contribution Guide](CONTRIBUTING.md))
-- Help improve our detection rules
-
-## ❓ Support
-
-Having trouble? Try these steps:
-
-1. Check our [FAQ](FAQ.md) for common solutions
-2. Search [community discussions](https://github.com/yourusername/anti-adblock-killer/discussions)
-3. [Open a support ticket](https://github.com/yourusername/anti-adblock-killer/issues/new/choose) if your issue isn't resolved
-
-## ⚖️ Legal Disclaimer
-
-This extension is provided for educational and ethical purposes only. Users are solely responsible for how they utilize this tool. Some websites may prohibit bypassing their anti-adblock measures in their Terms of Service.
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+Elite X is a high-performance **Dual-Layer Protection** system. It combines a behavioral Userscript engine with a curated Filter Ruleset to ensure a clean, uninterrupted browsing experience in 2026.
 
 ---
 
-This version features:
-- Better visual organization with emoji headers
-- Clearer section separation
-- More professional wording
-- Additional useful badges
-- Improved feature descriptions
-- Better contribution guidelines
-- Prominent legal disclaimer
+## ✨ Key Features
+
+- **🧠 Heuristic Engine:** Detects and kills anti-adblock logic by analyzing behavior, not just class names.
+- **🕵️ Stealth Cloaking:** Spoofs referrers and injects bait variables to keep your adblocker invisible.
+- **🔓 Paywall Bypass:** Automatically restores scrolling and removes blur filters on news sites.
+- **⚙️ Integrated Dashboard:** Built-in settings menu (⚙️) to toggle strict mode and debugging on-the-fly.
+- **🚀 Ultra-Lightweight:** Optimized for zero performance impact at `@document-start`.
+
+---
+
+## 📥 Installation (Essential 2-Step Setup)
+
+To get 100% protection, you **must** complete both steps:
+
+### Step 1: Install the Userscript (The Hacker)
+1. Install a manager like [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/).
+2. [**Click here to Install AakScript X**](https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakXScript.user.js)
+
+### Step 2: Subscribe to the Filter List (The Shield)
+This hides the visual overlays and banners neutralized by the script.
+* [**Subscribe to Elite X Filters**](abp:subscribe?location=https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakEliteX-filters.txt&title=Anti-Adblock%20Elite%20X)
+* *(Supported by uBlock Origin, AdGuard, and AdBlock Plus)*
+
+---
+
+## 🛠️ Usage & Configuration
+
+Once installed, the system works automatically. Look for the small **Gear Icon (⚙️)** at the bottom-right of any website to:
+- Toggle Protection ON/OFF.
+- Enable **Strict Mode** for stubborn websites.
+- Enable **Referrer Spoofing** for news articles.
+- View Debug Logs (for developers).
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to our detection rules! 
+- **Report Bugs:** If a site detects you, [Open an Issue](https://github.com/M0ofex/anti-adblock-killerx/issues).
+- **Update Rules:** Submit a PR to update `AakEliteX-filters.txt`.
+
+---
+
+## ⚖️ Legal Disclaimer
+
+This project is provided for educational and ethical purposes only. Users are solely responsible for their actions. Bypassing anti-adblock measures may violate the Terms of Service of certain websites.
+
+## 📜 License
+
+Licensed under the [MIT License](LICENSE).
