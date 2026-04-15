@@ -29,7 +29,7 @@ To get 100% protection, you **must** complete both steps:
 
 ### Step 2: Subscribe to the Filter List (The Shield)
 This hides the visual overlays and banners neutralized by the script.
-* [**Subscribe to Elite X Filters**](abp:subscribe?location=https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakEliteX-filters.txt&title=Anti-Adblock%20Elite%20X)
+* [**Subscribe to Elite X Filters**](https://m0ofex.github.io/anti-adblock-killerx/#step-2)
 * *(Supported by uBlock Origin, AdGuard, and AdBlock Plus)*
 
 ---
