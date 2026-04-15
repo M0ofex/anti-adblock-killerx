@@ -1,6 +1,6 @@
 # Anti-Adblock KillerX - Advanced Adblock Detection Bypass
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/yourusername/anti-adblock-killer/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/M0ofex/anti-adblock-killerx/releases)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.org/yourusername/anti-adblock-killer.svg?branch=master)](https://travis-ci.org/yourusername/anti-adblock-killer)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
