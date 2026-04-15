@@ -1,31 +1,18 @@
 // ==UserScript==
-
-// @name         Anti-Adblock Elite X
-
-// @version      4.2.0
-
+// @name         Anti-Adblock & Paywall Elite X
+// @version      4.3.0
 // @namespace    https://github.com/M0ofex/anti-adblock-killerx
-
 // @description  bypass for Adblock detectors and soft paywalls.
-
 // @author       Mofex_
-
+// @license      MIT
 // @match        *://*/*
-
 // @grant        GM_addStyle
-
 // @grant        GM_getValue
-
 // @grant        GM_setValue
-
 // @run-at       document-start
-
 // @updateURL    https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakXScript.user.js
-
 // @downloadURL  https://raw.githubusercontent.com/M0ofex/anti-adblock-killerx/main/AakXScript.user.js
-
 // ==/UserScript==
-
 
 (function() {
 
