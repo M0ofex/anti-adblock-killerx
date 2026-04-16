@@ -85,9 +85,26 @@
         };
     };
 
-    // 4. ENGINE
+    // 2. THE IMPROVED ENGINE
     const scan = (root) => {
+        // A. Static Selectors
         root.querySelectorAll?.(DB.selectors.join(',')).forEach(tech.nuke);
+
+        // B. Text Heuristics (Targeting Arabic & English Keywords)
+        // يبحث عن الكلمات داخل أي عنصر حتى لو الكلاس مجهول
+        const allElements = root.querySelectorAll?.('*') || [];
+        allElements.forEach(el => {
+            if (el.children.length === 0) { // استهداف العناصر التي تحتوي نص فقط لسرعة الأداء
+                const text = el.innerText || '';
+                if (text.includes('حظر الإعلانات') || text.includes('تعطيل برنامج')) {
+                    // نصعد للأعلى لإيجاد الحاوية الرئيسية (Container) وحذفها
+                    let container = el.closest('div[class*="adblock"], div[class*="AdBlock"], [id*="adblock"]');
+                    if (container) tech.nuke(container);
+                    else tech.nuke(el.parentElement); // حذف الأب كخطة بديلة
+                }
+            }
+        });
+
         if (tech.isEvil(root)) tech.nuke(root);
     };
 
