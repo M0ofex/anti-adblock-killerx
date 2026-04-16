@@ -98,3 +98,10 @@ stackoverflow.com##.adblock-prompt
 ##:has(> h2:contains(/adblock detected/i))
 ##:has(> span:contains(/please disable adblock/i))
 ##.dialog:has(> .title:contains(/ad blocker detected/i))
+
+! Specific Bypass for ignielAdBlock
+##.ignielAdBlock
+##.adblock-outer
+##.adblock-inner
+##.adblock-icon
+##.adblock-wrapper
