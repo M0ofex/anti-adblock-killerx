@@ -32,8 +32,12 @@
     Object.assign(window, { canRunAds: true, isAdblockerActive: false, adsAllowed: true });
 
     const DB = {
-        selectors: ['.adblock', '.paywall', '#paywall', '.modal-open', '.sp-messaging-glass', '.fc-ab-root', '.ad-modal', '.tp-modal', '.ab-root', '.anti-adblock'],
-        keys: ['adblock', 'whitelist', 'supporting ads', 'subscribe to read', 'disable your ad']
+        selectors: [
+            '.adblock', '.paywall', '#paywall', '.modal-open', 
+            '.fc-ab-root', '.tp-modal',
+            '.ignielAdBlock', '.adblock-outer', '.adblock-inner' // إضافات جديدة لهذا المانع
+        ],
+        keys: ['adblock', 'whitelist', 'supporting ads', 'subscribe to read', 'disable your ad', 'حظر الإعلانات'] // أضفنا الكلمة بالعربية
     };
 
     const tech = {
